@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Timetable</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>Interactive Timetable</header>
+
+    <div class="container">
+        <div class="toolbar">
+            <button id="editModeToggle">Toggle Edit Mode</button>
+            <button id="clearAll">Clear All</button>
+        </div>
+
+        <!-- Add buttons for Add Row, Edit Row, and Delete Row -->
+        <form id="dataEntryForm" class="hidden-form">
+            <label for="time">Time:</label>
+            <input type="text" id="time" placeholder="e.g., 9:00 AM - 10:00 AM" required>
+
+            <label for="monday">Monday:</label>
+            <input type="text" id="monday" placeholder="Class for Monday" required>
+
+            <label for="tuesday">Tuesday:</label>
+            <input type="text" id="tuesday" placeholder="Class for Tuesday" required>
+
+            <label for="wednesday">Wednesday:</label>
+            <input type="text" id="wednesday" placeholder="Class for Wednesday" required>
+
+            <label for="thursday">Thursday:</label>
+            <input type="text" id="thursday" placeholder="Class for Thursday" required>
+
+            <label for="friday">Friday:</label>
+            <input type="text" id="friday" placeholder="Class for Friday" required>
+
+            <button type="button" id="addRow">Add Row</button>
+            <button type="button" id="editRow">Edit Row</button>
+            <button type="button" id="deleteRow">Delete Row</button>
+        </form>
+
+
+        <table id="timetable" class="timetable">
+            <thead>
+                <tr>
+                    <th onclick="sortTable(0)">Time</th>
+                    <th onclick="sortTable(1)">Monday</th>
+                    <th onclick="sortTable(2)">Tuesday</th>
+                    <th onclick="sortTable(3)">Wednesday</th>
+                    <th onclick="sortTable(4)">Thursday</th>
+                    <th onclick="sortTable(5)">Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Existing rows -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Interactive Timetable. All rights reserved.</p>
+    </footer>
+
+
+    <!-- <script src="js/utils.js"></script>
+    <script src="js/timetable.js"></script>
+    <script src="js/sort.js"></script>
+    <script src="js/rowActions.js"></script> -->
+    <script src="js/copy_year.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
