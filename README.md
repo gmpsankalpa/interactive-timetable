@@ -29,7 +29,7 @@ Welcome to the Interactive Timetable project! This web application allows you to
 - Responsive design for various screen sizes.
 
 ## Demo
-Check out the [live demo]() to play the game.
+Check out the [live demo](https://gmpsankalpa.github.io/interactive-timetable/) to play the game.
 
 ## Getting Started
 
